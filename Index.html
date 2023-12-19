@@ -68,15 +68,15 @@
        </div>
          <div class="left-item">
            <div class="mt">
-               <h4><i class="fa-solid fa-check"></i> &nbsp  Affordable monthly premium packages.</h4>
+               <h4> <img src="img/check.png"></i> &nbsp  Affordable monthly premium packages.</h4>
                <p>abbabbabbbbab hdjhdwd hjhdwh</p>
                </div> <br>
                     <div class="mt">
-                     <h4><i class="fa-solid fa-check"></i>  &nbsp Choose your favorite Doctor.</h4>
+                     <h4> <img src="img/check.png"></i>  &nbsp Choose your favorite Doctor.</h4>
                         <p>abbabbabbbbab hdjhdwd hjhdwh</p>
                      </div><br>
                         <div class="mt">
-                         <h4><i class="fa-solid fa-check"></i> &nbsp  Only use friendly environment.</h4>
+                         <h4> <img src="img/check.png"></i> &nbsp  Only use friendly environment.</h4>
                            <p>abbabbabbbbab hdjhdwd hjhdwh</p>
                       </div>
                         
@@ -161,7 +161,7 @@
 </div>
 <div class="col-sm-4">
     <div class="emgncy2">
-        <button><a href="#" class="btn btn-primary">Booking Appointment</a></button>
+        <button id="add" onclick="show()"><a class="btn btn-primary">Booking Appointment</a></button>
     </div>
     </div>
 </div>
@@ -169,10 +169,115 @@
 </div>
 
 <!-- =========================================End Service======================================= -->
+<section>
+    <!-- <button  onclick="show()">Add</button> -->
+    
+
+<!-- <div id="popup">
+  <form id="form">
+    <button type="button" id="close" onclick="hide()">X</button>
+    <br>
+    <p1>Name:</p1>
+    <br>
+    <input id="name" name="name" type="text"/>
+    <br>
+    <p1>Age:</p1>
+    <br>
+    <input id="age" name="age" type="text"/>
+    <br>
+    <p1>Country:</p1>
+    <br>
+    <input id="country" name="country" type="text"/>
+    <br>
+    <button type="button" id="submit" onclick="add()">Submit</button>
+   </form>
+</div> -->
+<div class="row djkjk">
+        <div class="appoint" id="popup">
+            <button type="button" id="close" onclick="hide()">X</button>
+        <div class="col-md-10 offset-md-1 p-4 mt-5 shadow bg-light appoint">
+            <div class="col-12">
+                <h3 class="fw-normal text-secondary fs-4 text-uppercase mb-4 ">Appointment form</h3>
+            </div>
+            <form action="">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label>Patient Name:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label>Contact:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label>Patient Age:</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email">Email Id:</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="gender">Gender:</label>
+                      <select name="gender" class="form-control">
+                          <option value="">Please select one…</option>
+                         <option value="female">Female</option>
+                           <option value="male">Male</option>
+                              <option value="non-binary">Non-Binary</option>
+                          <option value="other">Other</option>
+                           <option value="Prefer not to answer">Perfer not to Answer</option>
+                      </select>
+
+                    </div>
+                    <div class="col-md-6">
+                        <label>Adhar No:</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label>Department:</label>
+                        <select class="form-select">
+                            <option selected>Purpose Of Appointment</option>
+                            <option value="1">Web Design</option>
+                            <option value="2">Web Development</option>
+                            <option value="3">IOS Developemt</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Appointment Date:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                     <div class="col-12 mt-5">                        
+                        <button type="submit" class="btn btn-primary float-end">Book Appointment</button>
+                        <button type="button" class="btn btn-outline-secondary float-end me-2">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</section>
 
 
 </div>
 
+
+
+
+<script>
+    function show(){
+  document.getElementById("popup").style.display = "block";
+}
+function hide() {
+  document.getElementById("popup").style.display = "none";
+  
+  document.getElementById("name").value = "";
+  document.getElementById("age").value = "";
+  document.getElementById("country").value = "";
+}
+
+
+</script>
 
 
 

@@ -133,7 +133,8 @@ nav .logoImg img{
     background: #fff;
     color: #000;
     opacity: 0.85;
-    z-index: 100;
+/*    z-index: 100;*/
+    z-index: 0;
 }
 
 .navbar{
@@ -346,9 +347,7 @@ button{
   background-color: #3fbabf;
    border-radius: 10px;
 }
-.fa-solid.fa-check{
-  color: green;
-}
+
 .tit {
 /*    padding: 165px;*/
     padding-bottom: 0px;
@@ -371,6 +370,11 @@ button{
 .mt{
   gap: 10px;
 }
+.mt img{
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+}
 
 /*==================================End Home Section==================================*/
 
@@ -391,7 +395,7 @@ button{
   margin-right: 50px;
   padding-bottom: 100px;
 }
-.fa-solid.fa-user-doctor{
+.lg .fa-solid.fa-user-doctor{
   background-color: #3fbabf;
   width: 60px;
   height: 60px;
@@ -453,7 +457,9 @@ button{
     gap: 50px;
     height: 100vh;
 }
-
+.mt .fa-solid{
+  color: #3fbabf;
+}
 
 /*====================================End appointment secton===================*/
 
@@ -549,3 +555,30 @@ button{
 
 
 /*===================================== End media 425px============================*/
+
+.appoint{
+  width: 800px;
+}
+
+#popup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(50, 50, 50, 0.9);
+}
+
+#close {
+    position: absolute;
+    font-weight: bold;
+    /* margin-left: 860px; */
+    left: 84%;
+    margin-top: 61px;
+    width: 30px;
+    height: 27px;
+}
+
+
+
