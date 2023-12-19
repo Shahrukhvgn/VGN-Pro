@@ -296,17 +296,10 @@ nav .logoImg img{
 
 /*====================================Start Home Section=============================*/
 /* important default settings */
-body,
-html {
-/*  height: 100%;*/
-/*  margin: 0;*/
-  /* use the following only if you are able to scroll past the image to see a white area (this is the <body> peeking out) above or below the image */
-/*  overflow: hidden;*/
-/*  overflow-y: scroll;*/
-}
+
 
 .background {
-    background-image: url(G:/VGN-Hospital-Pro/VGN-Pro/img/dr-2.jpg);
+    background-image: url("../img/dr-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 150px;
@@ -448,7 +441,7 @@ button{
 
 
 .background-2{
-  background-image: url(G:/VGN-Hospital-Pro/VGN-Pro/img/dr.png);
+  background-image: url("../img/dr.png");
    background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 200px;
